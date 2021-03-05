@@ -27,6 +27,21 @@ Breakpoints : Screens         : nickname
 html {
   font-size: 62.5%; }
 
+@media (max-width: 37.5em) {
+  .m3470-4n {
+    margin-top: 370%; } }
+
+@media (max-width: 37.5em) {
+  .m835-4n {
+    margin-top: 835%; } }
+
+/* margin-top: 6%;*/
+.m6-42-4n {
+  margin-top: 6%; }
+  @media (max-width: 37.5em) {
+    .m6-42-4n {
+      margin-top: 42%; } }
+
 .btn-dropDown__main,
 .btn-dropDown {
   border: none;
@@ -140,10 +155,13 @@ html {
   margin-bottom: 15%; }
   @media (max-width: 37.5em) {
     .card-wt {
-      width: 165%;
+      width: 100%;
       grid-auto-rows: 100%;
-      grid-template-columns: repeat(1, 1fr);
-      margin-bottom: 722%; } }
+      grid-template-columns: repeat(1, 1fr); } }
+
+@media (max-width: 37.5em) {
+  .sfpc {
+    margin-bottom: 254%; } }
 
 .dropdown {
   position: relative;
@@ -243,7 +261,7 @@ html {
 
 .footer {
   width: 100%;
-  height: 83vh;
+  height: 70vh;
   padding-top: 10rem;
   background-image: url("./img/wave1.svg"), url("./img/wave2.svg");
   background-repeat: no-repeat;
@@ -322,7 +340,9 @@ html {
   align-items: center; }
   @media (max-width: 37.5em) {
     .nav {
-      height: 24.4vh; } }
+      height: 18.4vh;
+      background-color: none;
+      box-shadow: none; } }
   .nav__logo {
     width: 17%;
     height: 100%;
@@ -332,9 +352,12 @@ html {
     text-decoration: none; }
     @media (max-width: 37.5em) {
       .nav__logo {
-        margin-left: -650px; } }
+        margin-left: -350px; } }
     .nav__logo--image {
       height: 100%; }
+      @media (max-width: 37.5em) {
+        .nav__logo--image {
+          height: 55%; } }
     .nav__logo--title {
       font-family: "Montserrat", sans-serif;
       font-style: normal;
@@ -351,7 +374,7 @@ html {
     height: 7rem;
     width: 7rem;
     background-color: white;
-    top: 4rem;
+    top: 2rem;
     right: 4rem;
     position: fixed;
     border-radius: 50%;
@@ -365,7 +388,7 @@ html {
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
-    top: 4.5rem;
+    top: 2.5rem;
     right: 4.5rem;
     position: fixed;
     background-image: radial-gradient(#428edf, #0057B7);
@@ -417,8 +440,8 @@ html {
     text-decoration: none; }
 
 .nav__popup {
-  top: 56%;
-  left: 69%;
+  top: 70%;
+  left: 57%;
   position: fixed;
   z-index: 1005;
   height: 100vh;
@@ -429,7 +452,7 @@ html {
   .nav__popup--item {
     list-style: none; }
   .nav__popup--link:link, .nav__popup--link:visited {
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-weight: 300;
     color: white;
     font-family: "Roboto", sans-serif;
@@ -468,14 +491,14 @@ html {
 .nav__side {
   position: absolute;
   top: 0px;
-  left: 290px;
+  left: 170px;
   list-style: none; }
 
 .top-c {
-  top: 109px; }
+  top: 92px; }
 
 .top-s {
-  top: 321px; }
+  top: 276px; }
 
 .featured {
   width: 100%;
@@ -487,8 +510,8 @@ html {
   gap: 2rem; }
   @media (max-width: 37.5em) {
     .featured {
-      padding: 0rem 25.6rem;
-      width: 213%;
+      padding: 0rem 2.6rem;
+      width: 100%;
       grid-template-rows: 8% 36% 36% 36% 8% 36% 36% 36%;
       grid-template-columns: 365px; } }
   .featured__header-1 {
@@ -562,6 +585,10 @@ html {
     justify-content: space-between;
     width: 80%;
     height: 45%; }
+    @media (max-width: 37.5em) {
+      .hero-sect__content {
+        width: 81%;
+        height: 55%; } }
   .hero-sect__heading {
     font-family: Montserrat;
     font-style: normal;
@@ -574,7 +601,8 @@ html {
     color: #0A2067; }
     @media (max-width: 37.5em) {
       .hero-sect__heading {
-        font-size: 60px; } }
+        font-size: 30px;
+        line-height: initial; } }
   .hero-sect__btn {
     width: 55.5%;
     height: 18%;
@@ -599,10 +627,17 @@ html {
       @media (max-width: 37.5em) {
         .hero-sect__btn--link:link, .hero-sect__btn--link:visited {
           font-size: 30px; } }
+    @media (max-width: 37.5em) {
+      .hero-sect__btn {
+        width: 99.5%;
+        height: 0%; } }
   .hero-sect__ctaPri, .hero-sect__ctaSec {
     width: 21rem;
     height: 7.5rem;
     border-radius: 1rem; }
+    @media (max-width: 37.5em) {
+      .hero-sect__ctaPri, .hero-sect__ctaSec {
+        width: 16rem; } }
   .hero-sect__ctaSec {
     background-color: #0A2067; }
     .hero-sect__ctaSec:focus {
@@ -623,12 +658,12 @@ html {
       font-size: 24px; }
       @media (max-width: 37.5em) {
         .hero-sect__contacts--no {
-          font-size: 50px; } }
+          font-size: 20px; } }
     .hero-sect__contacts--email {
       font-size: 24px; }
       @media (max-width: 37.5em) {
         .hero-sect__contacts--email {
-          font-size: 50px; } }
+          font-size: 20px; } }
   .hero-sect__icons {
     display: flex;
     flex-direction: column;
@@ -644,7 +679,7 @@ html {
   margin-top: 5%; }
   @media (max-width: 37.5em) {
     .hero-wt {
-      width: 165%; } }
+      width: 100%; } }
   .hero-wt__heading, .hero-wt__sub-heading, .hero-wt__desc-txt {
     font-family: Montserrat;
     font-style: normal;
@@ -655,12 +690,10 @@ html {
     font-weight: 500;
     font-size: 60px;
     text-decoration: underline;
-    text-align: center;
-    margin-top: 6%; }
+    text-align: center; }
     @media (max-width: 37.5em) {
       .hero-wt__heading {
-        margin-top: 42%;
-        width: 165%; } }
+        width: 100%; } }
   .hero-wt__sub-heading {
     font-weight: 400;
     font-size: 45px; }
@@ -793,8 +826,8 @@ html {
     object-fit: fill; }
     @media (max-width: 37.5em) {
       .video__bdg {
-        width: 213%;
-        height: 214vh; } }
+        width: 100%;
+        height: 100vh; } }
   .video__heading {
     font-family: Montserrat;
     font-style: normal;
@@ -825,7 +858,9 @@ html {
   align-items: center; }
   @media (max-width: 37.5em) {
     .nav {
-      height: 24.4vh; } }
+      height: 18.4vh;
+      background-color: none;
+      box-shadow: none; } }
   .nav__logo {
     width: 17%;
     height: 100%;
@@ -835,9 +870,12 @@ html {
     text-decoration: none; }
     @media (max-width: 37.5em) {
       .nav__logo {
-        margin-left: -650px; } }
+        margin-left: -350px; } }
     .nav__logo--image {
       height: 100%; }
+      @media (max-width: 37.5em) {
+        .nav__logo--image {
+          height: 55%; } }
     .nav__logo--title {
       font-family: "Montserrat", sans-serif;
       font-style: normal;
@@ -854,7 +892,7 @@ html {
     height: 7rem;
     width: 7rem;
     background-color: white;
-    top: 4rem;
+    top: 2rem;
     right: 4rem;
     position: fixed;
     border-radius: 50%;
@@ -868,7 +906,7 @@ html {
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
-    top: 4.5rem;
+    top: 2.5rem;
     right: 4.5rem;
     position: fixed;
     background-image: radial-gradient(#428edf, #0057B7);
@@ -920,8 +958,8 @@ html {
     text-decoration: none; }
 
 .nav__popup {
-  top: 56%;
-  left: 69%;
+  top: 70%;
+  left: 57%;
   position: fixed;
   z-index: 1005;
   height: 100vh;
@@ -932,7 +970,7 @@ html {
   .nav__popup--item {
     list-style: none; }
   .nav__popup--link:link, .nav__popup--link:visited {
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-weight: 300;
     color: white;
     font-family: "Roboto", sans-serif;
@@ -971,14 +1009,14 @@ html {
 .nav__side {
   position: absolute;
   top: 0px;
-  left: 290px;
+  left: 170px;
   list-style: none; }
 
 .top-c {
-  top: 109px; }
+  top: 92px; }
 
 .top-s {
-  top: 321px; }
+  top: 276px; }
 
 .container {
   width: 100%;
@@ -993,7 +1031,7 @@ html {
   grid-auto-rows: repeat(3, 1fr); }
   @media (max-width: 37.5em) {
     .container {
-      width: 165%;
+      width: 100%;
       grid-template-rows: repeat(1, 1fr);
       grid-template-columns: repeat(1, 1fr); } }
 
@@ -1064,8 +1102,8 @@ html {
   height: 116vh; }
   @media (max-width: 37.5em) {
     .header {
-      width: 213%;
-      height: 214vh; } }
+      width: 100%;
+      height: 100vh; } }
 
 .intro {
   background: #0A2067;
@@ -1097,6 +1135,11 @@ html {
   align-items: center;
   letter-spacing: -0.05em;
   color: #ffffff; }
+  @media (max-width: 37.5em) {
+    .text {
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: -0.1em; } }
 
 .hide {
   background-color: #0A2067;
@@ -1114,8 +1157,8 @@ html {
   width: 51%; }
   @media (max-width: 37.5em) {
     .contact-image {
-      width: 134%;
-      right: -65px; } }
+      width: 100%;
+      right: 0px; } }
 
 @media (max-width: 37.5em) {
   .nav-pos {
@@ -1128,7 +1171,8 @@ html {
   margin-left: 11rem; }
   @media (max-width: 37.5em) {
     .hero-contact {
-      width: 102%;
+      width: 100%;
+      height: 68vh;
       margin-left: 0rem; } }
   .hero-contact__list {
     list-style: none;
@@ -1150,6 +1194,10 @@ html {
     align-items: center;
     letter-spacing: -0.05em;
     color: #0A2067; }
+    @media (max-width: 37.5em) {
+      .hero-contact__heading, .hero-contact__p {
+        font-size: 27px;
+        line-height: initial; } }
   .hero-contact__icon {
     display: flex;
     flex-direction: column;
@@ -1158,6 +1206,9 @@ html {
     transform: rotate(90deg);
     margin-bottom: 0rem;
     margin-left: -8rem; }
+    @media (max-width: 37.5em) {
+      .hero-contact__pi {
+        margin-left: -6rem; } }
 
 .bsDropDown,
 .mvDropDown,
@@ -1252,7 +1303,7 @@ html {
   position: absolute; }
   @media (max-width: 37.5em) {
     .about-us {
-      width: 165%;
+      width: 100%;
       left: 5px; } }
   .about-us__heading {
     position: absolute;
@@ -1270,7 +1321,7 @@ html {
     text-decoration: underline; }
     @media (max-width: 37.5em) {
       .about-us__heading {
-        left: 260px; } }
+        left: 73px; } }
 
 .about-us-sec {
   display: flex;
