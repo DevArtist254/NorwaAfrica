@@ -55,7 +55,20 @@ html {
       margin-top: 20%; } }
 
 .m-39 {
-  margin-top: -39%; }
+  margin-top: 5%;
+  margin-bottom: 6%; }
+  @media (max-width: 37.5em) {
+    .m-39 {
+      margin-top: -39%;
+      margin-bottom: 0%; } }
+
+.m39 {
+  margin-top: 5%;
+  margin-bottom: 6%; }
+  @media (max-width: 37.5em) {
+    .m39 {
+      margin-top: -39%;
+      margin-bottom: 0%; } }
 
 .btn-dropDown__main,
 .btn-dropDown {
@@ -226,11 +239,12 @@ html {
     background-size: cover;
     background-repeat: no-repeat; }
   .dropdown__link:link, .dropdown__link:visited {
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 44px;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 30px;
     letter-spacing: -0.05em;
     color: #FFFFFF;
     text-decoration: none;
@@ -259,11 +273,12 @@ html {
       width: 33rem;
       display: none; }
     .dropdown__item--link:link, .dropdown__item--link:visited {
-      font-family: Montserrat;
+      font-family: "Montserrat", sans-serif;
       font-style: normal;
-      font-weight: 500;
-      font-size: 21px;
-      line-height: 44px;
+      font-weight: 400;
+      font-size: 18px;
+      text-transform: uppercase;
+      line-height: 30px;
       letter-spacing: -0.05em;
       color: #FFFFFF;
       text-decoration: none; }
@@ -275,70 +290,94 @@ html {
   display: block; }
 
 .footer {
+  border-top: 5px solid #0A2067;
   width: 100%;
   height: 70vh;
-  padding-top: 10rem;
-  background-image: url("./img/wave1.svg"), url("./img/wave2.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: transparent;
+  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center; }
   @media (max-width: 37.5em) {
     .footer {
-      display: none; } }
-  .footer__list {
-    height: 65%;
-    width: 51%;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start; }
+      height: 100vh;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column; } }
+  .footer__address, .footer__services, .footer__about {
+    width: 25%;
+    height: 70%; }
     @media (max-width: 37.5em) {
-      .footer__list {
-        width: 80%; } }
-  .footer__link:link, .footer__link:visited {
+      .footer__address, .footer__services, .footer__about {
+        width: 90%; } }
+  .footer__services--header {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: initial;
+    color: #0A2067;
+    width: 100%;
+    height: 10%;
+    margin-top: 7%; }
+  .footer__services--list {
+    list-style: none;
+    margin-top: 7%;
+    width: 100%;
+    height: 90%; }
+  .footer__services--items {
+    height: 10%;
+    width: 100%; }
+  .footer__services--link:link, .footer__services--link:visited {
     height: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: bold;
-    font-size: 23px;
-    line-height: 28px;
+    font-weight: thin;
+    font-size: 2rem;
     text-decoration: none;
-    color: #ffffffff; }
-  .footer__item {
-    width: 48%;
-    height: 21.6%; }
-  .footer__nav {
-    height: 65%;
-    width: 37%;
+    color: #0A2067; }
+  .footer__address--header {
+    width: 100%;
+    height: 30%;
+    margin-bottom: 2%;
+    display: flex; }
+  .footer__address--ad {
+    width: 100%;
+    height: 68%;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: initial;
+    color: #0A2067; }
+  .footer__address--logo {
+    height: 100%;
+    width: 30%; }
+  .footer__address--textArea {
+    height: 100%;
+    width: 70%; }
+  .footer__address--title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.5rem;
+    line-height: 4rem;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
-    @media (max-width: 37.5em) {
-      .footer__nav {
-        width: 80%; } }
-    .footer__nav--logo {
-      width: 100%;
-      height: 48%; }
-    .footer__nav--search {
-      width: 100%;
-      height: 22%; }
-      @media (max-width: 37.5em) {
-        .footer__nav--search {
-          height: 0; } }
-    .footer__nav--socials {
-      width: 100%;
-      height: 18%; }
+    align-items: center;
+    letter-spacing: -0.05em;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(180.47deg, #428EDF 22.44%, #001730 99.6%); }
+  .footer__address--q {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: initial;
+    color: #0A2067; }
 
 .nav {
   width: 100%;
@@ -444,9 +483,9 @@ html {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 18px;
+    text-transform: uppercase;
     line-height: 30px;
-    /* identical to box height */
     display: flex;
     align-items: center;
     letter-spacing: -0.05em;
@@ -468,10 +507,13 @@ html {
   .nav__popup--item {
     list-style: none; }
   .nav__popup--link:link, .nav__popup--link:visited {
-    font-size: 1.8rem;
-    font-weight: 300;
     color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 30px;
     text-align: none;
     padding: 1rem 2rem; }
   .nav__popup--item {
@@ -848,14 +890,14 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    height: 116%;
+    height: 100%;
     z-index: -10;
     opacity: .8;
     object-fit: fill; }
     @media (max-width: 37.5em) {
       .video__bdg {
         width: 100%;
-        height: 100vh; } }
+        height: 130vh; } }
   .video__heading {
     font-family: Montserrat;
     font-style: normal;
@@ -975,9 +1017,9 @@ html {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 18px;
+    text-transform: uppercase;
     line-height: 30px;
-    /* identical to box height */
     display: flex;
     align-items: center;
     letter-spacing: -0.05em;
@@ -999,10 +1041,13 @@ html {
   .nav__popup--item {
     list-style: none; }
   .nav__popup--link:link, .nav__popup--link:visited {
-    font-size: 1.8rem;
-    font-weight: 300;
     color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 30px;
     text-align: none;
     padding: 1rem 2rem; }
   .nav__popup--item {
@@ -1267,6 +1312,13 @@ html {
       color: #001730;
       font-weight: 500;
       font-size: 3.6rem; }
+      @media (max-width: 37.5em) {
+        .bsDropDown__header--h1,
+        .mvDropDown__header--h1,
+        .cvDropDown__header--h1,
+        .wdDropDown__header--h1,
+        .osDropDown__header--h1 {
+          margin-bottom: 2rem; } }
     .bsDropDown__header--h2,
     .mvDropDown__header--h2,
     .cvDropDown__header--h2,
@@ -1327,31 +1379,23 @@ html {
 .about-us {
   width: 85%;
   margin: 0 auto;
-  background-color: white;
-  left: 95px;
-  top: 276px;
-  position: absolute; }
+  background-color: white; }
   @media (max-width: 37.5em) {
     .about-us {
-      width: 100%;
-      left: 5px; } }
+      width: 100%; } }
   .about-us__heading {
-    position: absolute;
-    top: 145px;
-    left: 569px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 59px;
     line-height: 72px;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: -0.05em;
     text-decoration: underline; }
     @media (max-width: 37.5em) {
       .about-us__heading {
-        left: 73px; } }
+        left: 73px;
+        margin-top: 161.5rem; } }
 
 .about-us-sec {
   display: flex;
@@ -1364,14 +1408,165 @@ html {
     line-height: 100%;
     font-weight: 200;
     font-family: "Roboto", sans-serif;
-    font-size: 2.4rem;
+    font-size: 2rem;
     text-decoration: underline; }
   .content__item--p {
     line-height: 100%;
     font-weight: 200;
     font-family: "Roboto", sans-serif;
-    font-size: 2.4rem; }
+    font-size: 1.8rem;
+    line-height: 30px; }
   .content__item--text {
     font-weight: 200;
     font-family: "Roboto", sans-serif;
-    font-size: 2.4rem; }
+    font-size: 1.8rem;
+    line-height: 30px; }
+
+.framer {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw; }
+
+.move {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out; }
+
+.move.current {
+  opacity: 1; }
+
+.move .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px; }
+
+.move .content h1 {
+  margin-bottom: 10px; }
+
+.buttons button#next,
+.buttons button#prev {
+  position: absolute;
+  top: 50%; }
+
+.buttons button#next {
+  right: 15px; }
+
+.buttons button#prev {
+  left: 15px; }
+
+.buttons button {
+  border: 2px solid #333;
+  background-color: transparent;
+  color: #333;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none; }
+
+.header-p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: -0.05em;
+  line-height: 1.8rem;
+  color: #001730; }
+
+.buttons button:hover {
+  background-color: #333;
+  color: white; }
+
+@media (max-width: 37.5em) {
+  .move .content {
+    display: none; } }
+
+.move.current .content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s; }
+
+.phone-content {
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+  width: 100%;
+  top: 396px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: initial;
+  color: #0A2067; }
+  @media (max-width: 37.5em) {
+    .phone-content {
+      opacity: 1; } }
+
+.move:first-child {
+  background-image: url("./bdg/d.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.move:nth-child(1) {
+  background-image: url("./img/under-sink-ro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  @media (max-width: 37.5em) {
+    .move:nth-child(1) {
+      background-image: url("./img/6-RO.jpg"); } }
+
+.move:nth-child(2) {
+  background-image: url("./img/RO 1000lm3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (max-width: 37.5em) {
+    .move:nth-child(2) {
+      background-image: url("./img/RO 0.5lm3.jpg");
+      background-position: center; } }
+
+.move:nth-child(3) {
+  background-image: url("./img/solar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (max-width: 37.5em) {
+    .move:nth-child(3) {
+      background-position: center; } }
+
+.move:nth-child(4) {
+  background-image: url("./img/pumps.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (max-width: 37.5em) {
+    .move:nth-child(4) {
+      background-image: url("./img/CNP-V-P.jpg");
+      background-position: center; } }
+
+.move:nth-child(5) {
+  background-image: url("./img/wallpaper-chemicals.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (max-width: 37.5em) {
+    .move:nth-child(5) {
+      background-image: url("./img/chemicals.jpg");
+      background-position: center; } }
+
+.move:nth-child(6) {
+  background-image: url("./img/accessories.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (max-width: 37.5em) {
+    .move:nth-child(6) {
+      background-position: center;
+      background-image: url("./img/More-spare-parts.jpg"); } }
