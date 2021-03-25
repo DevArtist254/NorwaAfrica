@@ -406,7 +406,7 @@ html {
     text-decoration: none; }
     @media (max-width: 37.5em) {
       .nav__logo {
-        margin-left: -350px; } }
+        margin-left: -289px; } }
     .nav__logo--image {
       height: 100%; }
       @media (max-width: 37.5em) {
@@ -572,7 +572,7 @@ html {
       padding: 0rem 2.6rem;
       width: 100%;
       grid-template-rows: 8% 36% 36% 36% 8% 36% 36% 36%;
-      grid-template-columns: 365px; } }
+      grid-template-columns: 324px; } }
   .featured__header-1 {
     grid-column: 2 / 3; }
     @media (max-width: 37.5em) {
@@ -940,7 +940,7 @@ html {
     text-decoration: none; }
     @media (max-width: 37.5em) {
       .nav__logo {
-        margin-left: -350px; } }
+        margin-left: -289px; } }
     .nav__logo--image {
       height: 100%; }
       @media (max-width: 37.5em) {
@@ -1331,6 +1331,13 @@ html {
       color: #001730;
       font-weight: 500;
       font-size: 3.6rem; }
+      @media (max-width: 37.5em) {
+        .bsDropDown__header--h2,
+        .mvDropDown__header--h2,
+        .cvDropDown__header--h2,
+        .wdDropDown__header--h2,
+        .osDropDown__header--h2 {
+          font-size: 2.4rem; } }
   .bsDropDown__content,
   .mvDropDown__content,
   .cvDropDown__content,
@@ -1395,7 +1402,8 @@ html {
     @media (max-width: 37.5em) {
       .about-us__heading {
         left: 73px;
-        margin-top: 161.5rem; } }
+        margin-top: 169rem;
+        margin-bottom: 3rem; } }
 
 .about-us-sec {
   display: flex;
@@ -1500,7 +1508,7 @@ html {
   z-index: 10;
   opacity: 0;
   width: 100%;
-  top: 396px;
+  top: 465px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
   font-family: "Montserrat", sans-serif;
